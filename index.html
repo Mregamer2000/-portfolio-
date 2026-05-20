@@ -52,6 +52,7 @@
       .hero-line:nth-child(2) { animation-delay: .18s; }
       .hero-line:nth-child(3) { animation-delay: .32s; }
       .hero-line:nth-child(4) { animation-delay: .46s; }
+      .hero-line:nth-child(5) { animation-delay: .60s; }
       @keyframes heroIn {
         to { opacity: 1; transform: none; }
       }
@@ -130,6 +131,22 @@
 
     /* HERO */
     #hero { padding-top: 32px; }
+
+    .pfp {
+      display: block;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 18%;
+      border: 2px solid var(--border);
+      margin-bottom: 22px;
+      transition: transform .3s ease, border-color .3s ease;
+    }
+    .pfp:hover {
+      transform: scale(1.05) rotate(-2deg);
+      border-color: var(--accent);
+    }
 
     .availability {
       display: inline-flex;
@@ -277,6 +294,8 @@
 <main>
 
 <section id="hero">
+  <img src="PFPV2.png" alt="Mregamer2000" class="pfp hero-line">
+
   <div class="availability hero-line">
     <span class="dot"></span> Open to collaborate
   </div>
